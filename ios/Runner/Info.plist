@@ -28,6 +28,13 @@
 	<string>LaunchScreen</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<String>Give Access to Gallery</String>
+
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<String>Need access to location services</String>
+
+		<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<String>Need access to location services</String>
+
 	<key>NSCameraUsageDescription</key>
 	<String>Need Permission to Access Camera</String>
 	<key>UIMainStoryboardFile</key>

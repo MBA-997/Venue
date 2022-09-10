@@ -32,7 +32,7 @@ class PlaceListScreen extends StatelessWidget {
             : Consumer<GreatPlaces>(
                 child: const Center(
                     child: Text('Got no places yet, start adding some!')),
-                builder: (ctx, greatPlaces, ch) => greatPlaces.items.length <= 0
+                builder: (ctx, greatPlaces, ch) => greatPlaces.items.isEmpty
                     ? ch as Widget
                     : ListView.builder(
                         itemCount: greatPlaces.items.length,
@@ -42,6 +42,7 @@ class PlaceListScreen extends StatelessWidget {
                                 FileImage(greatPlaces.items[i].image),
                           ),
                           title: Text(greatPlaces.items[i].title),
+                          subtitle: Text(greatPlaces.items[i].location.address),
                           onTap: () {
                             //detail page
                           },

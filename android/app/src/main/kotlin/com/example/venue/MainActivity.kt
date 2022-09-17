@@ -1,4 +1,4 @@
-package com.example.venue
+package com.theappforgers.venue
 
 import io.flutter.embedding.android.FlutterActivity
 
